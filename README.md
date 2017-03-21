@@ -40,4 +40,4 @@ I still have some problems with formatting when the screen is smaller. The hambu
 
 // Biggest wins
 
-Getting carousel to work was a pain for me. Not sure why but it took a really long time. Biggest win is completing the page and viewing it as a whole. Would like to implement more transitional elements in the next page.
+Getting carousel to work was a pain for me. Not sure why but it took a really long time. Biggest win is completing the page and viewing it as a whole. Would like to implement more transitional elements in the future. Making a page comparable to my squarespace portfolio page in 2 weeks of class was a big win for me as well!

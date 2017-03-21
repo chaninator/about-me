@@ -29,7 +29,7 @@ $(function() {
       }
       $('blockquote').eq(quoteCounter).fadeIn();
     });
-  }, 7000);
+  }, 6000);
 
   // Nav Scroll Code
 
