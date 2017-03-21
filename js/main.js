@@ -1,12 +1,19 @@
 $(function() {
 
-    $('.hamburger').on('click', function(e) {
+  $('.hamburger').on('click', function(e) {
+    $('.nav-links').toggleClass('open-menu');
+    e.preventDefault();
+    $('.nav-links a').on('click', function(e) {
       $('.nav-links').toggleClass('open-menu');
       e.preventDefault();
-      $('.nav-links a').on('click', function(e) {
-        $('.nav-links').toggleClass('open-menu');
-      });
     });
+  });
+
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200
+  });
 
   // Quote Scroll Code
 
@@ -59,11 +66,6 @@ $(function() {
 
 
 
-  $('.grid').masonry({
-    // options
-    itemSelector: '.grid-item',
-    columnWidth: 200
-  });
 
 
 });
