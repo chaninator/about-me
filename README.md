@@ -1,3 +1,7 @@
+
+WDI10 Project 1 - About Me Page
+
+
 For my about me page I used the project example as a basis for my page. I coded each section individually in HTML. Added CSS next and finished with Javascript.
 
 // Nav bar
