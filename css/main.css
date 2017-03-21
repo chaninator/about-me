@@ -1,0 +1,270 @@
+nav .name a {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav .nav-links a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav {
+  background-color: #A8DADC;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+section {
+  background-color: #EBEBEB;
+  padding: 30px 0;
+  margin: 0 auto;
+  color: #444;
+}
+
+section h1 {
+  text-align: center;
+}
+
+section#quotes, section#about, section#contact {
+  background-color: #A8DADC;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+hr {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+
+nav .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  display: none;
+}
+
+blockquote:first-of-type {
+  display: block;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.quoter {
+  float: right;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+
+.name {
+  font-size: 35px;
+  padding: 5px 0;
+}
+
+.nav-links {
+  margin-left: auto;
+  line-height: 60px;
+}
+
+.hero {
+  background: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 500px;
+  text-align: center;
+  padding: 5% 0;
+  color: white;
+}
+
+.heading {
+  padding: 10% 0;
+  color: #444;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.slide {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  margin-left: 5px;
+  font-size: 20px;
+  padding-top: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 10px 40px;
+}
+
+.content-wrapper.intro {
+  padding: 0;
+}
+
+.content-wrapper.hero {
+  margin-top: 80px;
+}
+
+input, textarea {
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: .9rem;
+  outline: none;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+  background-color: #6FC6FF;
+}
+
+footer {
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+footer .content-wrapper {
+  display: flex;
+}
+
+footer p {
+  font-size: 20px;
+  display: inline-block;
+  margin: .25rem 0 0 0;
+}
+
+footer div {
+  margin: 0 0 0 auto;
+  display: inline-block;
+}
+
+footer a {
+  font-size: 30px;
+  margin-right: .3rem;
+}
+
+/*for smaller screens*/
+
+@media only screen and (max-width: 750px) {
+  .nav-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+    order: 3;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding-top: 1rem;
+  }
+  .open-menu {
+    display: flex;
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+  }
+  .nav-links a {
+    display: inline-block;
+    align-self: flex-start;
+    margin-left: 0;
+    font-size: .8rem;
+    padding: .25rem 0;
+  }
+  .mobile-nav {
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .heading {
+    padding: 10% 0;
+    margin-top: 100px;
+  }
+  .heading h1 {
+    font-size: 25px;
+  }
+  .heading h3 {
+    font-size: 18px;
+  }
+  .slide {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero {
+    background-color: #444;
+    background: url('../images/hero-small.jpg');
+    background-size: 100%;
+    text-align: center;
+    padding: 5% 0;
+  }
+  section h1 {
+    font-size: 25px;
+  }
+  hr {
+    padding: 0;
+    border: none;
+    border-top: solid 2px;
+    text-align: center;
+    max-width: 150px;
+    margin: 20px auto 20px;
+  }
+  .name a {
+    font-size: 24px;
+  }
+}
